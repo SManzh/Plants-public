@@ -1,0 +1,1477 @@
+@font-face {
+    font-family: 'Inika'; 
+    src: url(./assets/fonts/Inika-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Inika-Bold'; 
+    src: url(./assets/fonts/Inika-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Inter-Regular'; 
+    src: url(./assets/fonts/Inter-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Inter-Bold'; 
+    src: url(./assets/fonts/Inter-Bold.ttf);
+  }
+
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*------------------------------*/
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 134px;
+    background-color: #EDF2EC;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex: 0 0 auto;
+    font-family: Inika;
+    margin-left: 112px;
+    margin-top: 1px;
+}
+
+.logo img {
+    display: flex;
+    flex: 0 0 auto;
+    width: 20px;
+    height: 32px;
+    padding-bottom: 11px;
+}
+
+.logo p {
+    font-size: 16px;
+    color: #000000;
+    padding-top: 5px;
+}
+
+.header-burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 24px;
+    border: none;
+    margin-right: 0px;
+}
+
+.header-burger-btn span {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #717171;
+    left: 0px;
+    transition: transform .5s opacity .5s background-color .5s;
+}
+
+.header-burger-btn span:nth-child(1) {
+    transform: translateY(-12px);
+}
+
+.header-burger-btn span:nth-child(2) {
+    transform: translateY(-4px);
+}
+
+.header-burger-btn span:nth-child(3) {
+    transform: translateY(4px);
+}
+
+.header-burger-btn span:nth-child(4) {
+    transform: translateY(12px);
+}
+
+.header.open .header-burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header-burger-btn span:nth-child(3) {
+    opacity: 0;
+}
+
+.header.open .header-burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    transition: transform .5s;
+}
+
+.header.open .header-burger-btn span:nth-child(4) {
+    transform: translateY(0) rotate(-45deg);
+    transition: transform .5s;
+}
+
+nav.navigation {
+    margin-right: 46px;
+}
+
+ul.nav-list {
+    display: flex;
+    font-family: Inika;
+    list-style-type: none;
+}
+
+li.nav-point {
+    padding-right: 47px;
+}
+
+a.nav-a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #010201;
+    transition: all .3s;
+}
+
+a.active {
+    color: #E06733;
+}
+
+a:hover {
+    color: #E06733;
+}
+
+/*------------------------------*/
+.welcome {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #EDF2EC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 53px;
+    padding-bottom: 52px;
+}
+
+img.leafs {
+    width: 464px;
+    height: 424px;
+}
+
+.plants-text {
+    width: 549px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: #717171;
+    padding-left: 10px;
+}
+
+.plants-text h1 {
+    font-family: Inter-Bold;
+    margin-left: 0;
+    font-size: 45px;
+    line-height: 51px;
+}
+
+.plants-text span {
+    color: #499A18;
+}
+
+.plants-text p {
+    font-family: Inter-Regular;
+    font-size: 20px;
+    color: #636060;
+    line-height: 35px;
+}
+
+.plants-text button {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 0;
+    color: #000000;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    width: 158px;
+    height: 43px;
+    transition: all .3s;
+
+}
+
+.plants-text button:hover {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+}
+
+/*------------------------------*/
+.about {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 92px;
+    padding-bottom: 90px;
+}
+
+.gardeners-text {
+    width: 603px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 109px;
+    margin-top: 6px;
+}
+
+.gardeners-text h2 {
+    margin-left: 0; 
+    font-family: Inika;
+    font-size: 40px;
+    color: #499A18;
+    margin-bottom: 10px;
+}
+
+.gardeners-text span {
+    color: #E06733;
+}
+
+.gardeners-text p {
+    font-family: Inter-Regular;
+    font-size: 20px;
+    color: #636060;
+    line-height: 30px;
+}
+
+img.houseplants {
+    width: 464px;
+    height: 479px;
+    margin-left: -29px;
+}
+
+/*------------------------------*/
+.service {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #EDF2EC;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 66px;
+}
+
+.service-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 109px;
+    margin-top: 40px;
+}
+
+.service-head h2 {
+    font-family: Inika;
+    font-size: 40px;
+    color: #499A18;
+    width: 306px;
+}
+
+.service-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    margin-top: 29px;
+}
+
+.service-buttons button {
+    font-family: Inika;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #E06733;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    width: 161px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 39px;
+    transition: all .3s;
+}
+
+.service-buttons button:hover {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 14px;
+}
+
+div.pic {
+    width: 330px;
+    height: 450px;
+    margin-right: 58px;
+    margin-left: 58px;
+    margin-bottom: 55px;
+}
+
+div.capt {
+    width: 330px;
+    height: 101px;
+    margin-top: -4px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #E3E1D5;
+}
+
+div.capt p:first-child {
+    font-family: Inter-Bold;
+    font-size: 20px;
+    color: #E06733;
+    margin-top: -4px;
+}
+
+div.capt p:nth-child(2) {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color: #717171;
+    margin-top: 12px;
+}
+
+/*------------------------------*/
+.prices {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 105px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-left: 109px;
+    margin-top: 38px;
+}
+
+.price h2 {
+    font-family: Inter-Bold;
+    font-size: 40px;
+    color: #000000;
+    margin-left: 0;
+}
+
+.price-buttons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 0px;
+    margin-top: 58px;
+    width: 330px;
+    height: 282.01px;
+    border: 2px solid #D9D9D9; 
+    border-radius: 20px;
+}
+
+.price-buttons div.price-btn {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    font-family: Inter-Bold;
+    font-size: 20px;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 6px;;
+    margin-left: 38px;
+    transition: all .5s;
+}
+
+.price-buttons div.price-btn img:hover {
+    cursor: pointer;
+}
+
+.price-buttons div.price-btn img {
+    margin-right: 40px;
+}
+
+/*on click------------------------*/
+.price-buttons div.price-btn.on-click {
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all .3s;
+}
+
+.prcs-panels {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    transition: all .3s;
+}
+
+.prcs-panels:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 38px;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(2) img {
+    position: absolute;
+    top: -18px;
+    left: 195px;
+}
+
+.prcs-panels:nth-child(4) {
+    position: absolute;
+    top: 159px;
+    left: 38px;
+    z-index: 999;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(4) img {
+    position: absolute;
+    top: -25px;
+    left: 195px;
+}
+
+.prcs-panels:nth-child(6) {
+    position: absolute;
+    top: 230px;
+    left: 38px;
+    z-index: 999;
+    z-index: 999;
+    background-color: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.prcs-panels:nth-child(6) img {
+    position: absolute;
+    top: -15px;
+    left: 195px;
+}
+
+.prcs-panels.hide {
+    display: none;
+}
+
+.panel-divider {
+    width: 164px;
+    height: 1px;
+    background-color: #aea1a1;;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+div.panel-dscr {
+    font-family: Inter-Regular;
+    font-size: 10px;
+    color: #717171;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+div.panel-price {
+    font-family: Inter-Bold;
+    font-size: 12px;
+    color: #E06733;
+    margin-left: 40px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+div.panel-price span:nth-child(2) {
+    font-size: 16px;
+}
+
+div.panel-price span:nth-child(3) {
+    font-family: Inter;
+    font-size: 12px;
+    color: #000000;
+}
+
+div.panel-btn {
+    width: 86px;
+    height: 25px;
+    color: #717171;
+    background-color: #FFFFFF;
+    margin-left: 40px;
+    font-family: Inter-Bold;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top: 4px;
+}
+
+div.panel-btn a {
+    text-decoration: none;
+}
+
+
+
+.gardeners {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 0;
+}
+
+.gardeners p {
+    font-family: Inter-Bold;
+    font-size: 40px;
+    color: #000000;
+    width: 57%;
+    margin-top: 39px;
+    margin-right: 91px;
+}
+
+.gardeners span {
+    color: #499A18;
+}
+
+button.contact-us {
+    margin-right: 93px;
+    margin-top: 42px;
+    margin-bottom: 40px;
+    width: 163px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: Inika-Bold;
+    font-size: 20px;
+    color: #E06733;
+    background-color: #FFFFFF;
+    transition: all .3s;
+}
+
+button.contact-us:hover {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+}
+
+.gardeners img {
+    width: 162px;
+    height: 190px;
+    margin-right: 82px;
+    margin-top: -5px;
+}
+
+/*------------------------------*/
+.contacts {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #EDF2EC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+
+div.contact-woman {
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: -3px;
+}
+
+div.cont-city {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts h2 {
+    font-family: Inika-Bold;
+    font-size: 40px;
+    color: #499A18;
+    margin-top: 58px;
+    margin-left: 110px;
+    margin-right: 70px;
+}
+
+details.city {
+    width: 450px;
+    height: 50px;
+    margin-top: 148px;
+    border: none;
+    background-color: #D6E7D2;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+    margin-right: 92px;
+    transition: all .3s;   
+}
+
+details p {
+    z-index: 999;
+}
+
+summary {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 22px;
+    padding-bottom: 18px;
+}
+
+details.city:hover {
+    background-color: #C1E698;
+    cursor: pointer;
+}
+
+.city p {
+    background-color: #D9D9D9;
+    color: #499A18;
+    padding-top: 20px;
+    padding-left: 22px;
+    padding-bottom: 5px;
+}
+
+.city img {
+    margin-left: 340px;
+    margin-bottom: 0px;
+}
+
+.city p:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+p.cts-open {
+    z-index: 999;
+}
+
+div.city-cards {
+    position: relative;
+}
+
+div.cities.close {
+    display: none;
+}
+
+p.cts-open {
+    width: 450px;
+    height: 50px;
+    margin-top: 148px;
+    padding-left: 20px;
+    border: none;
+    background-color: #C1E698;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px 1px rgb(0 0 0 / 50%);
+    margin-right: 92px;
+    transition: all .3s;
+}
+
+.cts-open img {
+    padding-left: 180px;
+}
+
+.cities {
+    position: absolute;
+    left: -542px;
+    top: 0px;
+}
+
+.cities:nth-child(1) {
+    position: absolute;
+}
+
+.cities:nth-child(2) {
+    position: absolute;
+
+}
+
+.cities:nth-child(3) {
+    position: absolute;
+
+}
+
+.cities:nth-child(4) {
+    position: absolute;
+
+}
+
+.cts-open-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 0px;
+    width: 448px;
+    height: 214px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.cards-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.card-titles {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+.card-data {
+    font-family: Inter-Regular;
+    font-size: 16px;
+    color: #717171;
+    margin-left: 10px;
+}
+
+.cards-block p {
+    line-height: 40px;
+}
+
+.crds-call-btn {
+    width: 122px;
+    height: 26px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Inika-Bold;
+    font-size: 10px;
+    color: #717171;
+    padding-top: 1px;
+    margin-bottom: 20px;
+}
+
+.crds-call-btn a {
+    text-decoration: none;
+    color: #717171;
+}
+
+
+
+/*------------------------------*/
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 12px;
+    height: 130px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.git {
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.git p {
+    margin-left: 9px;
+    margin-right: 12px;
+}
+
+.git a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer p.rss {
+    margin-top: 40px;
+    margin-left: 331px;
+    font-family: Inter-Regular;
+    font-size: 20px;
+}
+
+.footer .icons {
+    width: 188px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-right: 155px;
+    list-style-type: none;
+}
+
+.footer .icons a {
+    padding-left: 28px;
+}
+
+/*interaction----------------------*/
+div.pic.blur {
+    filter: blur(5px);
+    transition: all .3s;
+}
+
+.service-buttons button.pushed {
+    color: #FFFFFF;
+    background-color: #E06733;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+
+/*media queries--------------------*/
+/*768px--------------------*/
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        height: 117px;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    nav.navigation {
+        margin-left: 0px;
+        margin-right: 1px;
+        padding-top: 3px;
+        overflow: hidden;
+    }
+
+    li.nav-point {
+        padding-right: 0px;
+        padding-left: 47px;
+    }
+
+    /*--------------------*/
+    .welcome {
+        padding: 0 50px;
+        max-width: 768px;
+        flex-direction: row-reverse;
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }
+
+    .plants-text {
+        padding-left: 0px;
+        padding-top: 8px;
+        justify-content: flex-start;
+    }
+    
+    .plants-text h1 {
+        font-size: 35px;
+    }
+
+    .plants-text p {
+        font-size: 16px;
+        line-height: 25px;
+        padding-top: 30px;
+        padding-bottom: 33px;
+        width: 341px;
+        margin-left: 5px;
+    }
+
+    img.leafs {
+        width: 100%;
+        height: 100%;
+        padding-left: 32px;
+        padding-bottom: 69px;
+    }
+
+    /*--------------------*/
+    .about {
+        padding: 0 50px;
+        padding-bottom: 88px;
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gardeners-text {
+        padding-top: 34px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .gardeners-text h2 {
+        text-align: center;
+        margin-left: 0px;
+        font-size: 35px;
+        width: 85%;
+        padding-left: 96px;
+        padding-bottom: 42px;
+    }
+
+    img.houseplants {
+        margin-right: auto;
+        margin-left: 205px;
+        padding-top: 73px;
+        width: 38%;
+        height: 38%;
+    }
+
+    /*--------------------*/
+    .service {
+        padding: 0 50px;
+        max-width: 768px;
+        padding-bottom: 42px;
+        overflow: hidden;
+    }
+
+    .service-head {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .service-head h2 {
+        padding-top: 19px;
+        padding-bottom: 16px;
+        margin-left: 0px;
+        font-size: 35px;
+    }
+
+    .service-buttons {
+        margin-left: 0px;
+    }
+
+    .service-buttons button {
+        margin-right: 38px;
+    }
+
+    .pics {
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    div.pic {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 138px;
+        padding-top: 10px;
+        width: 280px;
+        height: 350px;
+    }
+    
+    .pic img {
+        width: 280px;
+        height: 350px;
+    }
+
+    div.capt {
+        width: 280px;
+        margin-left: 0px;
+    }
+    
+    div.capt p:nth-child(2) {
+        width: 86%;
+        margin-top: 10px;
+    }
+
+    /*--------------------*/
+    .prices {
+        padding: 0 50px;
+        max-width: 768px;
+        padding-bottom: 80px;
+        overflow: hidden;
+    }
+
+    .price {
+        margin-left: 0px;
+    }
+
+    .price h2 {
+        font-size: 35px;
+        padding-left: 15px;
+        padding-top: 2px;
+    }
+
+    .price-buttons div.price-btn {
+        padding-bottom: 5px;
+        padding-left: 42px;
+    }
+
+    .gardeners p {
+        font-size: 25px;
+        margin-right: 0px;
+        margin-top: 140px;
+        line-height: 35px;
+        width: 85%;
+    }
+
+    button.contact-us {
+        margin-right: 0px;
+        margin-top: 28px;
+        margin-bottom: 36px;
+    }
+
+    .gardeners img {
+        margin-right: -5px;
+        margin-top: -9px;
+    }
+
+    /*--------------------*/
+    .contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 50px;
+        max-width: 768px;
+        overflow: hidden;
+    }
+
+    .cont-city {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts h2{
+        margin-top: 40px;
+        margin-left: 130px;
+        margin-right: 0px;
+    }
+
+    details.city {
+        margin-top: 101px;
+        margin-right: 3px;
+    }
+
+    .city img {
+        margin-left: 0px;
+        margin-right: 33px;
+    }
+
+    div.contact-woman {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 246px;
+    }
+
+    .contact-woman img {
+        width: 53%;
+        padding-left: 21px;
+        padding-bottom: 4px;
+    }
+
+    .cities {
+        left: -226px;
+        top: 45px;
+    }
+    
+    /*--------------------*/    
+    
+    .footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0 50px;
+        max-width: 768px;
+        margin-bottom: 49px;
+    }
+
+    div.git {
+        margin-left: auto;
+        margin-right: 37%;
+        margin-top: 31px;
+    }
+
+    .git p:nth-child(2) {
+        margin-right: 17px;
+    }
+
+    .footer p.rss {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 17px;
+        margin-bottom: 5px;
+    }
+
+    .footer .icons {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .footer .icons a {
+        padding-left: 0px;
+        padding-right: 29px;
+    }
+
+    ul.icons {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-right: 50px;
+    }
+}
+
+/*380px--------------------*/
+@media (max-width: 380px) {
+    .header {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+        height: 96px;
+    }
+
+    .header-burger-btn {
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        left: -150px;
+        top: 0;
+        width: 150px;
+        background-color: #E06733;
+        padding: 100px 20px 20px 20px;
+        transition: transform .5s;
+    }
+
+    li.nav-point {
+        padding-left: 0px;
+    }
+
+    ul.nav-list {
+        display: block;
+        padding-top: 90px;
+    }
+
+    a.nav-a {
+        color: #FFFFFF;
+        display: block;
+        padding: 10px 0;
+    }
+
+    
+    .header.open .navigation {
+        transform: translateX(100%);
+    }
+
+    /*--------------------*/
+    .welcome {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .plants-text {
+        height: 299px;
+    }
+    
+    .plants-text h1 {
+        padding-left: 25px;
+        font-size: 25px;
+        line-height: 35px;
+        padding-top: 17px;
+    }
+
+    .plants-text p {
+        padding-left: 19px;
+        padding-top: 21px;
+        padding-bottom: 26px;
+    }
+
+    .plants-text button {
+        margin-left: 25px;
+        font-size: 10px;
+        width: 99px;
+        height: 34px;
+    }    
+
+    /*--------------------*/
+    .about {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .gardeners-text {
+        padding-top: 25px;
+        justify-content: start;
+    }
+
+    .gardeners-text h2 {
+        font-size: 25px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 24px;
+    }
+    
+    .gardeners-text p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+
+    img.houseplants {
+        margin-top: -21px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+        padding-bottom: 29px;
+        width: 45%;
+        height: 45%;
+    }
+
+    /*--------------------*/
+    .service {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .service-head {
+        margin-top: 10px;
+    }
+
+    .service-head h2 {
+        width: 75%;
+        font-size: 25px;
+    }
+
+    .service-buttons {
+        margin-left: 0px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+    }
+    
+    .service-buttons button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 9px;
+    }
+
+
+    .pics {
+        margin-top: 11px;
+        margin-bottom: 4px;
+    }
+
+    div.pic {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 134px;
+    }
+
+    /*--------------------*/
+    .prices{
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+        flex-wrap: wrap;
+    }
+
+    .price {
+        margin-top: 22px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .price h2 {
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: 38%;
+    }
+    
+    .price-buttons {
+        width: 224px;
+        height: 235px;
+        margin-left: 54px;
+        margin-right: 54px;
+        margin-top: 37px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .prcs-panels {
+        width: 180px;
+    }
+
+    .prcs-panels:nth-child(2) {
+        left: 20px;
+    }
+
+    .prcs-panels:nth-child(4) {
+        left: 20px;
+        top: 138px;
+    }
+
+    .prcs-panels:nth-child(6) {
+        left: 20px;
+        top: 203px;
+    }
+
+    .prcs-panels:nth-child(2) img {
+        top: -25px;
+        left: 125px;
+    }
+
+    .prcs-panels:nth-child(4) img {
+        top: -30px;
+        left: 125px;
+    }
+
+    .prcs-panels:nth-child(6) img {
+        top: -30px;
+        left: 125px;
+    }
+
+    .price-buttons div.price-btn {
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+        padding-left: 30px;
+    }
+
+    .gardeners {
+        text-align: center;
+    }
+
+    .gardeners p {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    button.contact-us {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .gardeners img {
+        display: none;
+    }
+
+    /*--------------------*/
+    .contacts {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    .contacts h2 {
+        font-size: 25px;
+        margin-left: 31%;
+        margin-top: 25px;
+    }
+
+    details.city {
+        margin-top: 83px;
+        margin-left: 17px;
+        margin-right: 17px;
+        width: 300px;
+    }
+
+    .city p {
+        margin-left: 16px;
+    }
+
+    .city img {
+        margin-right: 25px;
+    }
+
+    div.contact-woman {
+        margin-top: 132px;
+        margin-right: 10px;
+    }
+
+    .contact-woman img {
+        width: 31%;
+        padding-left: 0px;
+    }
+
+    .cities {
+        left: -226px;
+        top: -7px;
+    }
+
+    p.cts-open {
+        width: 300px;
+        margin-left: 76px;
+    }
+
+    .cts-open-div {
+        width: 300px;
+        margin-left: 76px;
+        margin-top: 10px;
+    }
+
+    .cts-open img {
+        padding-left: 65px;
+    }
+
+    details.city img {
+        margin-left: 198px;
+    }
+
+    /*--------------------*/
+    .footer {
+        display: flex;
+        padding: 0 25px;
+        max-width: 380px;
+    }
+
+    div.git {
+        margin-top: 21px;
+        padding-left: 13%;
+    }
+
+    .git p:nth-child(2) {
+        margin-right: 24px;
+    }
+
+    .footer p.rss {
+        margin-bottom: -6px;
+    }
+
+}
